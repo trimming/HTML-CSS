@@ -3,12 +3,22 @@
     margin: 0;
 }
 
+.center{
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
 .header {
+    display: flex;
+    justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .header__logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
     color: #000;
     font-family: Gilroy-Bold;
     font-size: 24px;
@@ -67,6 +77,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border: none;
 }
 
 .top_content__button__rigth {
@@ -78,6 +89,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 .top__logo {
