@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: "Gilroy-Regular";
-    src: url("../fonts/GilroyRegular/GilroyRegular.ttf") format("truetype");
+    src: url("./fonts/GilroyRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
 }
@@ -46,6 +46,10 @@
 
 .features_item {
     padding: 40px 31px 25px 30px;
+}
+
+.feature__hover {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
 .features_item__img {
@@ -80,4 +84,103 @@
     font-weight: 400;
     line-height: 150%;
     text-decoration: none;
+}
+
+.services {
+    padding-top: 92px;
+    padding-bottom: 100px;
+    background: #FAFAFA;
+}
+
+.services__heading {
+    text-align: center;
+    margin-bottom: 19px;
+    color: #000;
+    font-family: "Gilroy-Bold";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.services__paragraph {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #666;
+    text-align: center;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.services__items {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 30px;
+}
+
+.services_item {
+    background: #FFF;
+
+}
+
+.services__hover {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.services_item__content {
+    padding: 0 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_item__heading {
+    margin-bottom: 22px;
+    color: #000;
+    font-family: "Gilroy-Bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.services_item__paragraph {
+    margin-bottom: 39px;
+    color: #AAA;
+    text-align: center;
+    font-family: "Gilroy-Regular";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.services_item__button {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: #F25822;
+}
+
+.add_margin__bottom {
+    margin-bottom: 15px;
+}
+
+.services_item__button__text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Gilroy-Bold";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.services_item__button__icon {
+    margin-top: 2px;
 }
