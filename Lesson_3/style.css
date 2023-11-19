@@ -76,6 +76,7 @@
 
 .top {
     display: flex;
+    align-items: center;
     gap: 41px;
     padding-top: 44px;
     padding-bottom: 162px;
