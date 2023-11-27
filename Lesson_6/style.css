@@ -54,7 +54,7 @@
 
 .top__heading_brand {
   font-weight: 900;
-  line-height: 58px;
+  line-height: normal;
   color: #222222;
   font-size: 48px;    
   font-style: normal;    
@@ -63,7 +63,7 @@
 .top__heading_lux {
   font-weight: 700;
   font-size: 32px;
-  line-height: 37px;
+  line-height: normal;
   color: #222;  
   font-style: normal;
 }
@@ -198,4 +198,62 @@
   padding: 14.5px 38.5px;
   color: #FF6A6A;
   text-align: center;
+}
+
+@media(max-width: 1140px) {
+  .center {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+  }  
+
+  .category {      
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 235px 160px;    
+  }  
+
+  .fetured__cards {    
+    
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 581px);
+   
+  }
+}
+
+@media(max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 367px);
+    padding-right: calc(50% - 367px);
+  }
+
+  .top__heading_brand {
+    font-size: 44px;
+  }
+
+  .top__heading_lux {
+    font-size: 24px;
+  }
+
+  .category {      
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 232px);
+    grid-template-rows: 167px 116px;
+    
+  }
+
+  .fetured {    
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+
+  .fetured__paragraph {      
+    margin-bottom: 73px;    
+  }
+
+  .fetured__cards {    
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(3, 581px);
+    margin-bottom: 32px;
+  }
 }
