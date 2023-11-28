@@ -144,6 +144,7 @@
   font-weight: 400;
   line-height: normal;
   font-style: normal;
+  font-size: 14px;
 }
 
 .fetured__cards {
@@ -198,6 +199,7 @@
   padding: 14.5px 38.5px;
   color: #FF6A6A;
   text-align: center;
+  font-size: 16px;
 }
 
 @media(max-width: 1140px) {
@@ -211,13 +213,6 @@
     grid-template-columns: repeat(3, 320px);
     grid-template-rows: 235px 160px;    
   }  
-
-  .fetured__cards {    
-    
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(2, 581px);
-   
-  }
 }
 
 @media(max-width: 1024px) {
@@ -255,5 +250,90 @@
     grid-template-columns: repeat(2, 360px);
     grid-template-rows: repeat(3, 581px);
     margin-bottom: 32px;
+  }
+}
+
+@media(max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+  }
+
+  .header__menu_right_icon {
+    display: none;
+  }
+
+  .top__img {
+    display: none;
+  }
+  
+  .top {
+    justify-content: center;
+    padding-bottom: 149px;
+    padding-top: 148px;
+  }
+
+  .top__heading {
+    margin: 0;
+    width: auto;
+    padding-left: 15px;
+  }
+
+  .top__heading_brand {
+    font-size: 38px;
+  }
+
+  .top__heading_lux {
+    font-size: 20px;
+  }
+
+  .category {      
+    grid-gap: 32px;
+    grid-template-columns: 343px;
+    grid-template-rows: 247px 248px 249px 111px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .item__accesories {
+    grid-column: 1;   
+  }
+  .category__item_img {
+    height: 100%;
+  }
+
+  .fetured {    
+    padding-bottom: 85px;
+  } 
+  
+  .fetured__heading {
+    margin-bottom: 3px;
+  }
+  
+  .fetured__paragraph {   
+    margin-bottom: 65px;
+  }
+
+  .fetured__cards {    
+    grid-template-columns: 360px;
+    grid-template-rows: repeat(6, 581px);
+    margin-bottom: 40px;
+  }
+}
+
+@media(max-width: 359px) {
+  .center {
+    padding-left: calc(50% - 160px);
+    padding-right: calc(50% - 160px);
+  }  
+
+  .category {    
+    grid-template-columns: 318px;
+    grid-template-rows: 247px 248px 249px 111px;    
+  }  
+  
+  .fetured__cards {    
+    grid-template-columns: 318px;
+    grid-template-rows: repeat(6, 581px);    
   }
 }
