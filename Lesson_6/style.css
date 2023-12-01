@@ -31,6 +31,10 @@
   gap: 30px;  
 }
 
+.header__menu_icon_hover:hover path{
+  fill:#F16D7F;
+} 
+
 .top {  
   background: #F1E4E6;
   display: flex;  
@@ -160,6 +164,40 @@
   width: 100%;
 }
 
+.card__wrap {
+  position: relative;
+}
+
+.card__wrap_btn {
+  display: none;
+  position: absolute;    
+  justify-content: center;    
+  align-items: center;
+  background: rgba(58, 56, 56, 0.86);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card__button {  
+  display: flex; 
+  gap: 11px; 
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 400;  
+  box-sizing: border-box;
+  padding: 11px 16px 9px 13px;
+  background: none;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card:hover .card__wrap_btn {
+  display: flex;
+}
+
 .card__info {
   background: #F8F8F8;
   padding-top: 24px;
@@ -200,7 +238,46 @@
   color: #FF6A6A;
   text-align: center;
   font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
 }
+.fetured__button:active {
+  color: #fff;
+  background: #FF6A6A;  
+}
+
+.advantage {
+  background: #222224;  
+  display: grid;
+  grid-template-columns: repeat(3, 360px);  
+  gap: 30px;
+  padding-bottom: 104px;
+  padding-top: 104px;
+  align-items: center;
+}
+
+.advantage__item {
+  text-align: center;
+}
+
+.advantage__item_heading {
+  font-weight: 400;
+  line-height:normal;
+  font-style: normal;
+  color: #FBFBFB;
+  font-size: 19.96px;
+  margin-top: 19px;  
+}
+
+.advantage__item_paragraph {
+  margin-top: 16px;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 13.972px;
+  color: #FBFBFB;
+  text-align: center;
+}  
+
 
 @media(max-width: 1140px) {
   .center {
@@ -213,6 +290,12 @@
     grid-template-columns: repeat(3, 320px);
     grid-template-rows: 235px 160px;    
   }  
+  .fetured__cards {
+    grid-template-columns: repeat(3, 320px);
+  }
+  .advantage {
+    grid-template-columns: repeat(3, 320px);
+  }
 }
 
 @media(max-width: 1024px) {
@@ -250,6 +333,15 @@
     grid-template-columns: repeat(2, 360px);
     grid-template-rows: repeat(3, 581px);
     margin-bottom: 32px;
+  }
+
+  .advantage {
+    flex-direction: column;
+    gap: 48px;
+    grid-template-columns: 360px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    justify-content: center;
   }
 }
 
@@ -319,6 +411,17 @@
     grid-template-rows: repeat(6, 581px);
     margin-bottom: 40px;
   }
+
+  .advantage {
+    padding-top: 48px;
+    padding-bottom: 81px;
+    gap: 47px;
+    grid-template-columns: 348px;
+  }
+
+  .advantage__item_heading {    
+    margin-top: 18px;
+  }
 }
 
 @media(max-width: 359px) {
@@ -335,5 +438,8 @@
   .fetured__cards {    
     grid-template-columns: 318px;
     grid-template-rows: repeat(6, 581px);    
+  }
+  .advantage {   
+    grid-template-columns: 318px;
   }
 }
