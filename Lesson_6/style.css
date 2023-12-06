@@ -338,7 +338,7 @@
   box-sizing: border-box;
   background-size: cover;
   border: none;
-  padding: 10px 22px 10px 22px;
+  padding: 14px 22px;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
 }
